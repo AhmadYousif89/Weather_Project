@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titel">
+        <h1>weather journal</h1>
+      </div>
+
+      <div class="app grid">
+        <h2 class="search">search by</h2>
+        <div class="holder grid">
+          <div class="input">
+            <label for="zip">ZipCode</label> <br />
+            <input
+              type="number"
+              id="zip"
+              step="100"
+              min="0"
+              placeholder="enter zipcode here"
+            />
+          </div>
+          <div class="input">
+            <label for="city">City Name</label> <br />
+            <input type="text" id="city" placeholder="enter city name here" />
+          </div>
+        </div>
+        <small class="error"></small>
+        <div class="allbtns grid">
+          <button class="btn">Generate</button>
+          <button class="btn show">Recent</button>
+        </div>
+        <div class="error"></div>
+
+        <div class="data__container">
+          <h2 class="recent">Most Recent Data</h2>
+          <p class="showdata"></p>
+          <div class="data grid">
+            <li><img id="icon" src="" alt="" /></li>
+            <ul class="temp flex">
+              <li id="temp"></li>
+              <li id="desc"></li>
+            </ul>
+            <ul class="loc_info">
+              <li id="cityname"></li>
+              <li id="coords"></li>
+            </ul>
+            <li id="date"></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

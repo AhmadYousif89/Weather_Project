@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "cairo", sans-serif;
+}
+p {
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+label,
+input {
+  display: inline-block;
+}
+input {
+  border-radius: 25px;
+  padding: 0.75em;
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+span {
+  margin: 0 0.5em;
+}
+
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titel {
+  background-color: steelblue;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.titel h1 {
+  color: #eee;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.search {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.app {
+  position: relative;
+  justify-items: center;
+  margin: 1em 0;
+}
+.app::before {
+  position: absolute;
+  content: "";
+  background: rgba(204, 204, 204, 0.25);
+  width: 100%;
+  height: 100%;
+  top: -15px;
+  left: 0;
+  transform: skew(0deg, 168deg);
+  transform-origin: left top;
+  z-index: -1;
+}
+
+.holder {
+  margin: 1em 0;
+}
+
+.input {
+  text-align: center;
+  font-size: 1.5rem;
+  color: steelblue;
+}
+
+::placeholder {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.allbtns {
+  margin: 1em 0;
+  justify-items: center;
+}
+.btn {
+  width: 150px;
+  padding: 1em;
+  margin: 1em;
+  border: none;
+  border-radius: 25px;
+  background-color: steelblue;
+  color: #eee;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+  background-color: #636364;
+  transition: 0.3s;
+}
+
+.error {
+  text-align: center;
+  line-height: 20px;
+  margin: 0;
+  color: darkred;
+  font-size: 1.2rem;
+}
+
+.data__container {
+  background-color: steelblue;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 0 15px 0 15px;
+  color: #eee;
+  text-align: center;
+}
+
+.recent {
+  padding: 0 1em;
+  border-bottom: #eee dashed;
+}
+.showdata {
+  font-weight: bold;
+}
+.data {
+  justify-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #eee;
+  margin: 1em 0;
+}
+
+.temp {
+  /* justify-self: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+#icon {
+  margin: 0;
+  padding: 0;
+}
+#temp {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#temp span {
+  color: red;
+  margin: 0;
+}
+#cityname span {
+  color: #000;
+  font-weight: bold;
+}
+#coords span {
+  color: #000;
+  font-weight: bold;
+}
+#date {
+  margin-top: 1em;
+}
+/* ---------------- */
+@media (min-width: 700px) {
+  .holder {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  .allbtns {
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    gap: 2em;
+  }
+}

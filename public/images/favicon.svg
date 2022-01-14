@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L60 0L60 60L0 60L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Home-icon">
+    <path d="M0 0L60 0L60 60L0 60L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M52.5 48.75L7.5 48.75L7.5 28.75L30 7.5L52.5 28.75L52.5 48.75Z" id="Shape" fill="#E8EAF6" fill-rule="evenodd" stroke="none" />
+      <path d="M48.7501 26.25L42.5001 20L42.5001 11.25L48.7501 11.25L48.7501 26.25ZM7.5 48.75L52.5 48.75L52.5 55L7.5 55L7.5 48.75Z" id="Shape" fill="#C5CAE9" fill-rule="evenodd" stroke="none" />
+      <path d="M30 5.37497L5.00003 28.625L7.50003 31.375L30 10.5L52.5 31.375L55 28.625L30 5.37497Z" id="Shape" fill="#B71C1C" fill-rule="evenodd" stroke="none" />
+      <path d="M22.5 35L37.5 35L37.5 55L22.5 55L22.5 35Z" id="Shape" fill="#D84315" fill-rule="evenodd" stroke="none" />
+      <path d="M26.25 21.2501L33.75 21.2501L33.75 28.7501L26.25 28.7501L26.25 21.2501Z" id="Shape" fill="#01579B" fill-rule="evenodd" stroke="none" />
+      <path d="M34.375 44.375C34 44.375 33.75 44.625 33.75 45L33.75 47.5C33.75 47.875 34 48.125 34.375 48.125C34.75 48.125 35 47.875 35 47.5L35 45C35 44.625 34.75 44.375 34.375 44.375L34.375 44.375Z" id="Shape" fill="#FF8A65" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
